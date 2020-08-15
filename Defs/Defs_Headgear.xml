@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==============================================
+	================ Legate Helmet ===================
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionHeadgearBase">
+		<defName>JDS_Legion_Headgear_Legate</defName>
+		<label>Legate Helmet</label>
+		<description>"The helmet is missing half of the left horn"</description>
+	<graphicData>
+      <texPath>Things/UI/Legate_Helmet_UI</texPath>
+    </graphicData>
+    <apparel>
+		<wornGraphicPath>Things/Headgear/Legate_Helmet/Legate_Helmet</wornGraphicPath>
+		<tags>
+			<li>LegateHelmet</li>			
+		</tags>
+    </apparel>	
+    <statBases>
+		<WorkToMake>10000</WorkToMake>
+		<MaxHitPoints>220</MaxHitPoints>
+		<Mass>2.2</Mass>
+		<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.68</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.46</ArmorRating_Heat>
+		<Insulation_Cold>6</Insulation_Cold>
+		<Insulation_Heat>16</Insulation_Heat>
+		<EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	    <NegotiationAbility>0.45</NegotiationAbility>		
+	</equippedStatOffsets>	
+    <costList>
+		<Steel>350</Steel>
+		<ComponentIndustrial>2</ComponentIndustrial>		
+    </costList>
+  </ThingDef>
+
+	<!--==============================================
+	============== Legion Centurion ==================
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionHeadgearBase">
+		<defName>JDS_Legion_Headgear_Centurion</defName>
+		<label>Legion Centurion Helmet</label>
+		<description>"The armor is composed of other pieces of armor taken from that of the wearer's defeated opponents in combat."</description>
+	<graphicData>
+      <texPath>Things/UI/Legion_Centurion_UI</texPath>
+    </graphicData>
+    <apparel>
+		<wornGraphicPath>Things/Headgear/Legion_Centurion/Legion_Centurion</wornGraphicPath>
+		<tags>
+			<li>LegionCenturion</li>			
+		</tags>
+    </apparel>	
+    <statBases>
+		<WorkToMake>10000</WorkToMake>
+		<MaxHitPoints>200</MaxHitPoints>
+		<Mass>2</Mass>
+		<ArmorRating_Sharp>0.93</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.62</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.43</ArmorRating_Heat>
+		<Insulation_Cold>5</Insulation_Cold>
+		<Insulation_Heat>16</Insulation_Heat>
+		<EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	    <NegotiationAbility>0.25</NegotiationAbility>		
+	</equippedStatOffsets>	
+    <costList>
+		<Steel>230</Steel>
+		<Cloth>30</Cloth>
+		<ComponentIndustrial>2</ComponentIndustrial>		
+    </costList>
+  </ThingDef>
+
+	<!--==============================================
+	============= Legion Centurion v2 ================
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionHeadgearBase">
+		<defName>JDS_Legion_Headgear_Legion_v2_Centurion_</defName>
+		<label>Legion Centurion v2</label>
+		<description>"The armor is composed of other pieces of armor taken from that of the wearer's defeated opponents in combat."</description>
+	<graphicData>
+      <texPath>Things/UI/Legion_Centurion_v2_UI</texPath>
+    </graphicData>
+    <apparel>
+		<wornGraphicPath>Things/Headgear/Legion_Centurion_v2/Legion_Centurion_v2</wornGraphicPath>
+		<tags>
+			<li>ExiledDawn_Casque_Helmet</li>			
+		</tags>
+    </apparel>	
+    <statBases>
+		<WorkToMake>10000</WorkToMake>
+		<MaxHitPoints>200</MaxHitPoints>
+		<Mass>2</Mass>
+		<ArmorRating_Sharp>0.96</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.43</ArmorRating_Heat>
+		<Insulation_Cold>5</Insulation_Cold>
+		<Insulation_Heat>16</Insulation_Heat>
+		<EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	    <NegotiationAbility>0.25</NegotiationAbility>		
+	</equippedStatOffsets>	
+    <costList>
+		<Steel>230</Steel>
+		<Cloth>130</Cloth>
+		<ComponentIndustrial>2</ComponentIndustrial>		
+    </costList>
+  </ThingDef>
+
+	<!--==============================================
+	============ Legion Decanus Helmet ===============
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionHeadgearBase">
+		<defName>JDS_Legion_Headgear_Decanus</defName>
+		<label>Legion Decanus Helmet</label>
+		<description>"Decanus helmet is worn by Legionaries who have reached the rank of decanus and are put in command of a contubernium (squad or platoon) of Prime Legionaries."</description>
+	<graphicData>
+      <texPath>Things/UI/Legion_Decanus_Helmet_UI</texPath>
+    </graphicData>
+    <apparel>
+		<wornGraphicPath>Things/Headgear/Legion_Decanus_Helmet/Legion_Decanus_Helmet</wornGraphicPath>
+		<tags>
+			<li>LegionDecanusHelmet</li>			
+		</tags>
+    </apparel>	
+    <statBases>
+		<WorkToMake>7500</WorkToMake>
+		<MaxHitPoints>110</MaxHitPoints>
+		<Mass>1.1</Mass>
+		<ArmorRating_Sharp>0.67</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.31</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>16</Insulation_Heat>
+		<EquipDelay>1.2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+	    <NegotiationAbility>0.10</NegotiationAbility>		
+	</equippedStatOffsets>	
+    <costList>
+		<Steel>210</Steel>
+		<Cloth>20</Cloth>
+		<ComponentIndustrial>1</ComponentIndustrial>			
+    </costList>
+  </ThingDef>
+
+	<!--==============================================
+	============ Legion Explorer Helmet ==============
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionHeadgearBase">
+		<defName>JDS_Legion_Headgear_Explorer_Helmet</defName>
+		<label>Legion Explorer Hood</label>
+		<description>"It appears to be one piece of cloth wrapped around the head and fitted with a small visor from a motorcycle helmet to act as a shade."</description>
+	<graphicData>
+      <texPath>Things/UI/Legion_Explorer_Helmet_UI</texPath>
+    </graphicData>
+    <apparel>
+		<wornGraphicPath>Things/Headgear/Legion_Explorer_Helmet/Legion_Explorer_Helmet</wornGraphicPath>
+		<tags>
+			<li>LegionExplorerHelmet</li>			
+		</tags>
+    </apparel>	
+    <statBases>
+		<WorkToMake>5000</WorkToMake>
+		<MaxHitPoints>85</MaxHitPoints>
+		<Mass>0.8</Mass>
+		<ArmorRating_Sharp>0.58</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.25</ArmorRating_Heat>
+		<Insulation_Cold>6</Insulation_Cold>
+		<Insulation_Heat>16</Insulation_Heat>
+		<EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <costList>
+		<Steel>30</Steel>
+		<Cloth>150</Cloth>
+    </costList>
+  </ThingDef>
+
+	<!--==============================================
+	============ Legion Prime Helmet =================
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionHeadgearBase">
+		<defName>JDS_Legion_Headgear_Prime_Helmet</defName>
+		<label>Legion Prime Helmet</label>
+		<description>"Prime legionaries are the Legion's infantry force, though much less common than recruit legionaries."</description>
+	<graphicData>
+      <texPath>Things/UI/Legion_Prime_Helmet_UI</texPath>
+    </graphicData>
+    <apparel>
+		<wornGraphicPath>Things/Headgear/Legion_Prime_Helmet/Legion_Prime_Helmet</wornGraphicPath>
+		<tags>
+			<li>LegionPrimeHelmet</li>			
+		</tags>
+    </apparel>	
+    <statBases>
+		<WorkToMake>7500</WorkToMake>
+		<MaxHitPoints>110</MaxHitPoints>
+		<Mass>1.1</Mass>
+		<ArmorRating_Sharp>0.67</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.31</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>16</Insulation_Heat>
+		<EquipDelay>1.2</EquipDelay>
+    </statBases>
+    <costList>
+		<Steel>210</Steel>
+		<Cloth>20</Cloth>
+		<ComponentIndustrial>1</ComponentIndustrial>	
+    </costList>
+  </ThingDef>
+
+	<!--==============================================
+	============ Legion Recruit Helmet ===============
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionHeadgearBase">
+		<defName>JDS_Legion_Headgear_Recruit_Helmet</defName>
+		<label>Legion Recruit Helmet</label>
+		<description>"Like most Legion armor, it is made from repurposed sports equipment, consisting of a football player's protective shoulder and chest pads reinforced with additional leather padding and worn over a baseball catcher's vest"</description>
+	<graphicData>
+      <texPath>Things/UI/Legion_Recruit_Helmet_UI</texPath>
+    </graphicData>
+    <apparel>
+		<wornGraphicPath>Things/Headgear/Legion_Recruit_Helmet/Legion_Recruit_Helmet</wornGraphicPath>
+		<tags>
+			<li>LegionRecruitHelmet</li>			
+		</tags>
+    </apparel>	
+    <statBases>
+		<WorkToMake>7500</WorkToMake>
+		<MaxHitPoints>110</MaxHitPoints>
+		<Mass>1.1</Mass>
+		<ArmorRating_Sharp>0.61</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.31</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>16</Insulation_Heat>
+		<EquipDelay>1.2</EquipDelay>
+    </statBases>
+    <costList>
+		<Steel>190</Steel>
+		<Cloth>20</Cloth>
+		<ComponentIndustrial>1</ComponentIndustrial>	
+    </costList>
+  </ThingDef>
+
+	<!--==============================================
+	============ Legion_Veteran_Helmet ===============
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionHeadgearBase">
+		<defName>JDS_Legion_Headgear_Veteran_Helmet</defName>
+		<label>Legion Veteran Helmet</label>
+		<description>"Like most Legion armor, it is made from repurposed sports equipment, consisting of a football player's protective shoulder and chest pads reinforced with additional leather padding and worn over a baseball catcher's vest"</description>
+	<graphicData>
+      <texPath>Things/UI/Legion_Veteran_Helmet_UI</texPath>
+    </graphicData>
+    <apparel>
+		<wornGraphicPath>Things/Headgear/Legion_Veteran_Helmet/Legion_Veteran_Helmet</wornGraphicPath>
+		<tags>
+			<li>LegionVeteranHelmet</li>			
+		</tags>
+    </apparel>	
+    <statBases>
+		<WorkToMake>7500</WorkToMake>
+		<MaxHitPoints>110</MaxHitPoints>
+		<Mass>1.1</Mass>
+		<ArmorRating_Sharp>0.68</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.39</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.31</ArmorRating_Heat>
+		<Insulation_Cold>4</Insulation_Cold>
+		<Insulation_Heat>16</Insulation_Heat>
+		<EquipDelay>1.2</EquipDelay>
+    </statBases>
+    <costList>
+		<Steel>210</Steel>
+		<Cloth>20</Cloth>
+		<ComponentIndustrial>1</ComponentIndustrial>	
+    </costList>
+  </ThingDef>
+
+	<!--==============================================
+	========== Legion Vexillarius Helmet =============
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionHeadgearBase">
+		<defName>JDS_Legion_Headgear_Vexillarius_Helmet</defName>
+		<label>Legion Vexillarius Helmet</label>
+		<description>"The armor appears to be based on a suit of Legion veteran armor."</description>
+	<graphicData>
+      <texPath>Things/UI/Legion_Vexillarius_Helmet_UI</texPath>
+    </graphicData>
+    <apparel>
+		<wornGraphicPath>Things/Headgear/Legion_Vexillarius_Helmet/Legion_Vexillarius_Helmet</wornGraphicPath>
+		<tags>
+			<li>LegionVexillariusHelmet</li>			
+		</tags>
+    </apparel>	
+    <statBases>
+		<WorkToMake>6500</WorkToMake>
+		<MaxHitPoints>93</MaxHitPoints>
+		<Mass>0.9</Mass>
+		<ArmorRating_Sharp>0.58</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.25</ArmorRating_Heat>
+		<Insulation_Cold>8</Insulation_Cold>
+		<Insulation_Heat>16</Insulation_Heat>
+		<EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <costList>
+		<Cloth>230</Cloth>
+    </costList>
+  </ThingDef>
+
+</Defs>

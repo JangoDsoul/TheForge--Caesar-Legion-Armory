@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<!--==============================================
+	============ Legion Caesar Apparel ===============
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionApparelBase">
+		<defName>JDS_Legion_Caesar_Apparel</defName>
+		<label>Caesar Apparel</label>
+		<description>"The undershirt of the tunic appears to be a red sports jersey"</description>  
+	<graphicData>
+		<texPath>Things/UI/Caesar_Apparel_UI</texPath>
+    </graphicData>
+	<apparel>
+		<wornGraphicPath>Things/Apparel/Caesar_Apparel/Caesar_Apparel</wornGraphicPath>
+		<tags>
+			<li>CaesarApparel</li>
+		</tags>			
+    </apparel>
+    <statBases>
+		<WorkToMake>8500</WorkToMake>
+		<MaxHitPoints>200</MaxHitPoints>
+		<Mass>2.2</Mass>
+		<Flammability>0.1</Flammability>
+		<ArmorRating_Sharp>0.33</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.37</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.45</ArmorRating_Heat>
+		<Insulation_Cold>12</Insulation_Cold>
+		<Insulation_Heat>18</Insulation_Heat>
+		<EquipDelay>4</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<SocialImpact>0.35</SocialImpact>
+	</equippedStatOffsets>
+	<costList>
+		<Cloth>100</Cloth>		
+	</costList>	
+  </ThingDef>
+
+	<!--==============================================
+	================= Legate Armor ===================
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionApparelBase">
+		<defName>JDS_Legion_Legate_Armor</defName>
+		<label>Legate Armor</label>
+		<description>"The armor appears to be a full suit of heavy gauge steel and offers full body protection. It also has a cloak in excellent condition, but the armor itself bears numerous battle scars and the helmet is missing half of the left horn."</description>  
+	<graphicData>
+		<texPath>Things/UI/Legate_Armor_UI</texPath>
+    </graphicData>
+	<apparel>
+		<wornGraphicPath>Things/Apparel/Legate_Armor/Legate_Armor</wornGraphicPath>
+		<tags>
+			<li>LegateArmor</li>
+		</tags>			
+	</apparel>	
+    <statBases>
+		<WorkToMake>10000</WorkToMake>
+		<MaxHitPoints>220</MaxHitPoints>
+		<Mass>4.5</Mass>
+		<ArmorRating_Sharp>1.3</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.72</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.45</ArmorRating_Heat>
+		<Insulation_Cold>11</Insulation_Cold>
+		<Insulation_Heat>17</Insulation_Heat>
+		<EquipDelay>11</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<SocialImpact>0.45</SocialImpact>
+		<MoveSpeed>-0.12</MoveSpeed>
+	</equippedStatOffsets>
+	<costList>
+		<Steel>500</Steel>
+		<Cloth>100</Cloth>		
+		<ComponentIndustrial>5</ComponentIndustrial>
+	</costList>	
+  </ThingDef>
+  
+	<!--==============================================
+	============ Legion Centurion Armor ==============
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionApparelBase">
+		<defName>JDS_Legion_Centurion_Armor</defName>
+		<label>Legion Centurion Armor</label>
+		<description>"The Legion centurion armor is by far the strongest suit of armor available to Caesar's Legion."</description>  
+	<graphicData>
+		<texPath>Things/UI/Legion_Centurion_Armor_UI</texPath>
+    </graphicData>
+	<apparel>
+		<wornGraphicPath>Things/Apparel/Legion_Centurion_Armor/Legion_Centurion_Armor</wornGraphicPath>
+		<tags>
+			<li>LegionCenturionArmor</li>
+		</tags>				
+	</apparel>			
+    <statBases>
+		<WorkToMake>9580</WorkToMake>
+		<MaxHitPoints>280</MaxHitPoints>
+		<Mass>4.2</Mass>
+		<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.42</ArmorRating_Heat>
+		<Insulation_Cold>11</Insulation_Cold>
+		<Insulation_Heat>17</Insulation_Heat>
+		<EquipDelay>8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<SocialImpact>0.15</SocialImpact>
+		<MoveSpeed>-0.10</MoveSpeed>
+		<CarryingCapacity>0.20</CarryingCapacity>
+	</equippedStatOffsets>
+	<costList>
+		<Steel>430</Steel>
+		<Cloth>150</Cloth>	
+		<ComponentIndustrial>3</ComponentIndustrial>		
+	</costList>	
+  </ThingDef> 
+ 
+	<!--==============================================
+	============ Legion Explorer Armor ===============
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionApparelBase">
+		<defName>JDS_Legion_Explorer_Armor</defName>
+		<label>Legion Explorer Armor</label>
+		<description>"The Explorer armor itself is supposed to be identical to the Legion recruit armor"</description>  
+	<graphicData>
+		<texPath>Things/UI/Legion_Explorer_Armor_UI</texPath>
+    </graphicData>
+	<apparel>
+		<wornGraphicPath>Things/Apparel/Legion_Explorer_Armor/Legion_Explorer_Armor</wornGraphicPath>
+		<tags>
+			<li>LegionExplorerArmor</li>
+		</tags>				
+	</apparel>			
+    <statBases>
+		<WorkToMake>9000</WorkToMake>
+		<MaxHitPoints>220</MaxHitPoints>
+		<Mass>2.5</Mass>
+		<ArmorRating_Sharp>0.98</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.53</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.35</ArmorRating_Heat>
+		<Insulation_Cold>11</Insulation_Cold>
+		<Insulation_Heat>14</Insulation_Heat>
+		<EquipDelay>4</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<MoveSpeed>-0.08</MoveSpeed>
+	</equippedStatOffsets>
+	<costList>
+		<Steel>155</Steel>
+		<Cloth>80</Cloth>		
+		<ComponentIndustrial>1</ComponentIndustrial>
+	</costList>	
+  </ThingDef>
+
+	<!--==============================================
+	=========== Legion Praetorian Armor ==============
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionApparelBase">
+		<defName>JDS_Legion_Praetorian_Armor</defName>
+		<label>Legion Praetorian Armor</label>
+		<description>"The protective elements of this armor appear to be made of a set of football shoulder pads (protecting the shoulders, neck and chest) and a baseball umpire or catcher's "vest""</description>  
+	<graphicData>
+		<texPath>Things/UI/Legion_Praetorian_Armor_UI</texPath>
+    </graphicData>
+	<apparel>
+		<wornGraphicPath>Things/Apparel/Legion_Praetorian_Armor/Legion_Praetorian_Armor</wornGraphicPath>
+		<tags>
+			<li>LegionExplorerArmor</li>
+		</tags>			
+	</apparel>			
+    <statBases>
+		<WorkToMake>9000</WorkToMake>
+		<MaxHitPoints>220</MaxHitPoints>
+		<Mass>2.5</Mass>
+		<ArmorRating_Sharp>0.98</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.53</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.35</ArmorRating_Heat>
+		<Insulation_Cold>11</Insulation_Cold>
+		<Insulation_Heat>14</Insulation_Heat>
+		<EquipDelay>4</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<MoveSpeed>-0.08</MoveSpeed>
+	</equippedStatOffsets>
+	<costList>
+		<Steel>155</Steel>
+		<Cloth>150</Cloth>
+		<ComponentIndustrial>1</ComponentIndustrial>	
+	</costList>	
+  </ThingDef>
+
+	<!--==============================================
+	============= Legion Prime Armor =================
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionApparelBase">
+		<defName>JDS_Legion_Prime_Armor</defName>
+		<label>Legion Prime Armor</label>
+		<description>"The protective elements of this armor appear to be made of a set of football shoulder pads (protecting the shoulders, neck and chest) and a baseball umpire or catcher's "vest"</description>  
+	<graphicData>
+		<texPath>Things/UI/Legion_Prime_Armor_UI</texPath>
+    </graphicData>
+	<apparel>
+		<wornGraphicPath>Things/Apparel/Legion_Prime_Armor/Legion_Prime_Armor</wornGraphicPath>
+		<tags>
+			<li>LegionPrimeArmor</li>
+		</tags>			
+	</apparel>			
+    <statBases>
+		<WorkToMake>9000</WorkToMake>
+		<MaxHitPoints>220</MaxHitPoints>
+		<Mass>2.5</Mass>
+		<ArmorRating_Sharp>0.98</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.53</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.35</ArmorRating_Heat>
+		<Insulation_Cold>11</Insulation_Cold>
+		<Insulation_Heat>14</Insulation_Heat>
+		<EquipDelay>4</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<MoveSpeed>-0.08</MoveSpeed>
+	</equippedStatOffsets>
+	<costList>
+		<Steel>155</Steel>
+		<Cloth>80</Cloth>		
+		<ComponentIndustrial>1</ComponentIndustrial>
+	</costList>	
+  </ThingDef>  
+  
+	<!--==============================================
+	============= Legion Recruit Armor ===============
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionApparelBase">
+		<defName>JDS_Legion_Recruit_Armor</defName>
+		<label>Legion Recruit Armor</label>
+		<description>"The protective elements of this armor appear to be made of a set of football shoulder pads (protecting the shoulders, neck and chest) and a baseball umpire or catcher's "vest"</description>  
+	<graphicData>
+		<texPath>Things/UI/Legion_Recruit_Armor_UI</texPath>
+    </graphicData>
+	<apparel>
+		<wornGraphicPath>Things/Apparel/Legion_Recruit_Armor/Legion_Recruit_Armor</wornGraphicPath>
+		<tags>
+			<li>LegionRecruitArmor</li>
+		</tags>			
+	</apparel>			
+    <statBases>
+		<WorkToMake>9000</WorkToMake>
+		<MaxHitPoints>220</MaxHitPoints>
+		<Mass>2.5</Mass>
+		<ArmorRating_Sharp>0.98</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.53</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.35</ArmorRating_Heat>
+		<Insulation_Cold>11</Insulation_Cold>
+		<Insulation_Heat>14</Insulation_Heat>
+		<EquipDelay>4</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<MoveSpeed>-0.08</MoveSpeed>
+	</equippedStatOffsets>
+	<costList>
+		<Steel>155</Steel>
+		<Cloth>80</Cloth>		
+		<ComponentIndustrial>1</ComponentIndustrial>
+	</costList>	
+  </ThingDef>  
+ 
+	<!--==============================================
+	=========== Legion Vexillarius Armor =============
+	===============================================-->	
+
+  <ThingDef ParentName="JDSLegionApparelBase">
+		<defName>JDS_Legion_Vexillarius_Armor</defName>
+		<label>Legion Vexillarius Armor</label>
+		<description>"The protective elements of this armor appear to be made of a set of football shoulder pads (protecting the shoulders, neck and chest) and a baseball umpire or catcher's "vest""</description>  
+	<graphicData>
+		<texPath>Things/UI/Legion_Vexillarius_Armor_UI</texPath>
+    </graphicData>
+	<apparel>
+		<wornGraphicPath>Things/Apparel/Legion_Vexillarius_Armor/Legion_Vexillarius_Armor</wornGraphicPath>
+		<tags>
+			<li>LegionVexillariusArmor</li>
+		</tags>			
+	</apparel>	
+    <statBases>
+		<WorkToMake>9000</WorkToMake>
+		<MaxHitPoints>220</MaxHitPoints>
+		<Mass>2.5</Mass>
+		<ArmorRating_Sharp>0.98</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.53</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.35</ArmorRating_Heat>
+		<Insulation_Cold>11</Insulation_Cold>
+		<Insulation_Heat>14</Insulation_Heat>
+		<EquipDelay>4</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<MoveSpeed>-0.08</MoveSpeed>
+	</equippedStatOffsets>
+	<costList>
+		<Steel>155</Steel>
+		<Cloth>80</Cloth>		
+		<ComponentIndustrial>1</ComponentIndustrial>
+	</costList>	
+  </ThingDef> 
+ 
+</Defs>

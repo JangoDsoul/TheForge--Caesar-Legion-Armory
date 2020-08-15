@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==============================================
+	================= Helmet Base ====================
+	===============================================-->
+	
+  <ThingDef Name="JDSLegionHeadgearBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>3</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>		
+	<graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>JDSLegionHeadgear</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<recipeMaker>
+		<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		<researchPrerequisite>JDSLegionArmoryCraft</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>JDSWorkBench</li>
+        </recipeUsers>
+	</recipeMaker>	
+	<thingCategories Inherit="False">
+		<li>JDSLegionHeadgear_Standard</li>
+	</thingCategories>	
+  </ThingDef>
+
+	<!--==============================================
+	================= Armor Base ====================
+	===============================================-->
+	
+  <ThingDef Name="JDSLegionApparelBase" ParentName="ApparelBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>3</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+	<graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>	
+    <apparel>
+		<bodyPartGroups>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Hands</li>
+			<li>Waist</li>
+			<li>Legs</li>
+			<li>Feet</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Shell</li>
+			<li>Middle</li>			
+		</layers>
+		<tags>
+			<li>JDSLegionApparel</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+	</apparel>
+	<recipeMaker>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>	
+		<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		<researchPrerequisite>JDSLegionArmoryCraft</researchPrerequisite>
+		<defaultIngredientFilter>
+			<categories>
+				<li>Root</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Gold</li>
+				<li>Silver</li>
+				<li>Plasteel</li>
+				<li>Jade</li>
+				<li>Uranium</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>		
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>JDSWorkBench</li>
+        </recipeUsers>
+	</recipeMaker>	
+	<thingCategories Inherit="False">
+		<li>JDSLegionApparel_Standard</li>
+	</thingCategories>	
+  </ThingDef>
+
+<!--  
+
+	\\\ Add some Color Gen for some factions maybe...\\\
+
+	<colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.93,0,0)</only>
+        </li>       
+		<li>
+          <weight>10</weight>
+          <only>(0.64,0.85,0.98)</only>
+        </li> -
+      </options>
+    </colorGenerator>	
+-->
+</Defs>

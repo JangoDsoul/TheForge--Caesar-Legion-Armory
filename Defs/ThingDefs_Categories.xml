@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--=== Category Base ===-->
+  
+    <ThingCategoryDef>
+		<defName>JDSLegionArmory_Main</defName>
+		<label>Legion Armory</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+  
+	<!--=== Armor ===-->
+  
+    <ThingCategoryDef>
+		<defName>JDSLegionApparel_Standard</defName>
+		<label>Legion Apparel</label>
+		<parent>JDSLegionArmory_Main</parent>
+	</ThingCategoryDef>
+  
+	<!--=== Helmet ===-->
+
+	<ThingCategoryDef>
+		<defName>JDSLegionHeadgear_Standard</defName>
+		<label>Legion Headgear</label>
+		<parent>JDSLegionArmory_Main</parent>
+	</ThingCategoryDef>
+  
+</Defs>

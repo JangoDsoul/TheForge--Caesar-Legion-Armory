@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==================================================
+	==================== Weapons =========================
+	===================================================-->	
+  
+	<!--========== Ranged ==========-->  
+  
+  <ThingDef Name="JDSLegionGunBase" ParentName="BaseHumanMakeableGun" Abstract="True">
+	<techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>	
+	<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<weaponTags>
+      <li>LegionWeaponRange</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+	<recipeMaker>
+		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		<researchPrerequisite>JDSLegionArmoryCraft</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>JDSWorkBench</li>
+        </recipeUsers>
+	</recipeMaker>	
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+      </li>
+    </comps>	
+  </ThingDef> 
+
+	<!--========== Blunt ==========-->	
+
+ <ThingDef Name="JDSLegionBluntBase" ParentName="BaseMeleeWeapon_Blunt_Quality" Abstract="True">
+    <techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>	
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>LegionWeaponsMelee</li>
+    </weaponTags>
+  </ThingDef>
+ 
+	<!--========== Sharp ==========-->
+
+
+ <ThingDef Name="JDSLegionSharpBase" ParentName="BaseMeleeWeapon_Sharp_Quality" Abstract="True">
+    <techLevel>Industrial</techLevel>
+	<tradeability>Sellable</tradeability>	
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <weaponTags>
+      <li>LegionWeaponsMelee</li>
+    </weaponTags>
+  </ThingDef>    
+  
+
+
+	<!--==============================================
+	================== Projectile ====================
+	===============================================-->	
+  
+  <ThingDef Name="JDSLegionBullet" ParentName="BaseBullet" Abstract="True">
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+ 
+	<!--========== Low ==========-->
+  
+   <ThingDef ParentName="JDSLegionBullet">
+    <defName>Low_Damage_Legion_Bullet</defName>
+    <label>Small Caliber Bullet</label>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>	
+
+	<!--========== Middle ==========-->
+
+  <ThingDef ParentName="JDSLegionBullet">
+    <defName>Mid_Damage_Legion_Bullet</defName>
+    <label>Mid-Size Caliber Bullet</label>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>	
+
+	<!--========== High ==========-->
+  
+   <ThingDef ParentName="JDSLegionBullet">
+    <defName>High_Damage_Legion_Bullet</defName>
+    <label>High Caliber Bullet</label>
+	<projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+	  <stoppingPower>1</stoppingPower>	
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>	  
+  
+ 	<!--========== Spear ==========-->
+  
+   <ThingDef ParentName="BaseBullet">
+    <defName>Damage_Legion_Spear</defName>
+    <label>Throwing Spear</label>
+    <graphicData>
+      <texPath>Things/UI/Spear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.3</drawSize>
+    </graphicData>	
+	<projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <armorPenetrationBase>0.34</armorPenetrationBase>		  
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>	 
+  
+    <!-- magic
+    <ThingCategoryDef>
+      <defName>LS_Magic</defName>
+      <label>magic</label>
+      <parent>Weapons</parent>
+	</ThingCategoryDef> -->
+	<!--<drawSize></drawSize>-->
+	<!--<equippedAngleOffset></equippedAngleOffset>-->
+  
+</Defs>

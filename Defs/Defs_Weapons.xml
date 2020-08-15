@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 	<!--==============================================
+	================ 12.7mm Pistol ===================
+	===============================================-->	
+  
+  <ThingDef ParentName="JDSLegionGunBase">
+	<defName>JDS_Legion_Weapon_12-7mm_Pistol</defName>
+	<label>12.7mm Pistol</label>
+	<description>"A Swiss SIG-Sauer 14mm handgun rechambered for 12.7mm ammunition, likely designed for long-range pistol hunting or target shooting. It was imported to the United States from the European Commonwealth before the Great War."</description>
+	<graphicData>
+		<texPath>Things/Weapons/12.7mm_Pistol</texPath>
+		<drawSize>1.2</drawSize>	
+	</graphicData>
+	<soundInteract>Interact_Autopistol</soundInteract>
+	<statBases>
+		<WorkToMake>4000</WorkToMake>
+		<Mass>1.2</Mass>
+		<AccuracyTouch>1.00</AccuracyTouch>
+		<AccuracyShort>0.90</AccuracyShort>
+		<AccuracyMedium>0.50</AccuracyMedium>
+		<AccuracyLong>0.20</AccuracyLong>
+		<RangedWeapon_Cooldown>0.50</RangedWeapon_Cooldown>
+	</statBases>
+	<costList>
+		<Steel>110</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+	</costList>	
+	<weaponTags>
+		<li>LegionWeaponRange</li>
+		<li>12_7mmPistol</li>
+	</weaponTags>
+	<verbs>
+	  <li>
+		<defaultProjectile>Low_Damage_Legion_Bullet</defaultProjectile>
+		<warmupTime>0.40</warmupTime>
+		<range>25</range>
+        <burstShotCount>1</burstShotCount>			
+		<soundCast>Shot_Autopistol</soundCast>
+		<muzzleFlashScale>7</muzzleFlashScale>
+		<verbClass>Verb_Shoot</verbClass>
+		<hasStandardCommand>true</hasStandardCommand>
+		<soundCastTail>GunTail_Light</soundCastTail>		
+	  </li>
+	</verbs>	
+  </ThingDef> 
+
+ 	<!--==============================================
+	=============== Varmint Rifle ====================
+	===============================================-->	
+  
+  <ThingDef ParentName="JDSLegionGunBase">
+	<defName>JDS_Legion_Weapon_Varmint_Rifle</defName>
+	<label>Varmint Rifle</label>
+	<description>"The varmint rifle is a low-powered hunting rifle, designed for hunting varmint and small game such as Boomrats."</description>
+	<graphicData>
+		<texPath>Things/Weapons/VarmintRifle</texPath>
+		<drawSize>1.2</drawSize>
+	</graphicData>
+	<soundInteract>Interact_Rifle</soundInteract>
+	<statBases>
+		<WorkToMake>5000</WorkToMake>
+		<Mass>1.8</Mass>
+		<AccuracyTouch>0.57</AccuracyTouch>
+		<AccuracyShort>1.00</AccuracyShort>
+		<AccuracyMedium>0.73</AccuracyMedium>
+		<AccuracyLong>0.56</AccuracyLong>
+		<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+	</statBases>
+	<costList>
+		<Steel>145</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+	</costList>	
+	<weaponTags>
+		<li>LegionWeaponRange</li>
+		<li>VarmintRifle</li>		
+	</weaponTags>
+	<verbs>
+	  <li>
+		<defaultProjectile>Mid_Damage_Legion_Bullet</defaultProjectile>
+		<warmupTime>1.30</warmupTime>
+		<range>38</range>
+        <burstShotCount>1</burstShotCount>			
+		<soundCast>Shot_Shotgun</soundCast>
+		<muzzleFlashScale>7</muzzleFlashScale>
+		<verbClass>Verb_Shoot</verbClass>
+		<hasStandardCommand>true</hasStandardCommand>
+		<soundCastTail>GunTail_Light</soundCastTail>		
+	  </li>
+	</verbs>	
+  </ThingDef> 
+ 
+ 	<!--==============================================
+	============== Caravan Shotgun ===================
+	===============================================-->	
+  
+  <ThingDef ParentName="JDSLegionGunBase">
+	<defName>JDS_Legion_Weapon_Caravan_Shotgun</defName>
+	<label>CaravanShotgun</label>
+	<description>"A shotgun, also called a "scattergun," is a firearm designed to shoot a multitude of lead or steel balls of varying sizes."</description>
+	<graphicData>
+		<texPath>Things/Weapons/CaravanShotgun</texPath>
+		<drawSize>1.2</drawSize>
+	</graphicData>
+	<soundInteract>Interact_Rifle</soundInteract>
+	<statBases>
+		<WorkToMake>6000</WorkToMake>
+		<Mass>1.8</Mass>
+		<AccuracyTouch>0.86</AccuracyTouch>
+		<AccuracyShort>0.93</AccuracyShort>
+		<AccuracyMedium>0.61</AccuracyMedium>
+		<AccuracyLong>0.5</AccuracyLong>
+		<RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+	</statBases>
+	<costList>
+		<Steel>152</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+	</costList>	
+	<weaponTags>
+		<li>LegionWeaponRange</li>
+		<li>CaravanShotgun</li>		
+	</weaponTags>
+	<verbs>
+	  <li>
+		<defaultProjectile>Bullet_Shotgun</defaultProjectile>
+		<warmupTime>1.30</warmupTime>
+		<range>25</range>
+        <burstShotCount>1</burstShotCount>			
+		<soundCast>Shot_Shotgun</soundCast>
+		<muzzleFlashScale>7</muzzleFlashScale>
+		<verbClass>Verb_Shoot</verbClass>
+		<hasStandardCommand>true</hasStandardCommand>
+		<soundCastTail>GunTail_Light</soundCastTail>		
+	  </li>
+	</verbs>	
+  </ThingDef>    
+
+  	<!--==============================================
+	================ MacheteGeck =====================
+	===============================================-->	
+  
+  <ThingDef ParentName="JDSLegionSharpBase">
+    <defName>JDS_Legion_Weapon_Melee_MacheteGeck</defName>
+    <label>Machete</label>
+    <description>"The machete appears to be a makeshift weapon, and consists of a lawn mower blade strapped to a wooden handle. It is the primary melee weapon of Caesar's Legion."</description>
+    <graphicData>
+      <texPath>Things/Weapons/MacheteGeck</texPath>
+	  <drawSize>1.2</drawSize>		  
+    </graphicData>
+	<equippedAngleOffset>-40</equippedAngleOffset>		
+	<weaponTags>
+		<li>LegionWeaponMelee</li>
+		<li>MacheteGeck</li>		
+	</weaponTags>
+    <statBases>
+      <WorkToMake>9500</WorkToMake>
+      <Mass>1.6</Mass>
+    </statBases>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>0.3</cooldownTime>
+      </li>
+      <li>
+        <label>Blade</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+		<Steel>90</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>		
+	</costList>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+      </li>
+    </comps>
+	<recipeMaker>
+		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		<researchPrerequisite>
+			<li>JDSLegionArmoryCraft</li>
+		</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>JDSWorkBench</li>
+        </recipeUsers>
+	</recipeMaker>		
+   </ThingDef>	    
+  
+  	<!--==============================================
+	=============== Machete Gladius ==================
+	===============================================-->	
+  
+  <ThingDef ParentName="JDSLegionSharpBase">
+    <defName>JDS_Legion_Weapon_Melee_MacheteGladius</defName>
+    <label>Machete Gladius</label>
+    <description>"The wide blade at the head with an indentation into the blade towards the hilt is designed to give more weight to the head of the blade, allowing for more momentum with slashes."</description>
+    <graphicData>
+      <texPath>Things/Weapons/MacheteGladius</texPath>
+	  <drawSize>1.2</drawSize>		  
+    </graphicData>
+	<equippedAngleOffset>-40</equippedAngleOffset>		
+	<weaponTags>
+		<li>LegionWeaponMelee</li>
+		<li>MacheteGladius</li>		
+	</weaponTags>
+    <statBases>
+      <WorkToMake>9800</WorkToMake>
+      <Mass>1.6</Mass>
+    </statBases>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>0.30</cooldownTime>
+      </li>
+      <li>
+        <label>Blade</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+		<Steel>145</Steel>
+		<ComponentIndustrial>2</ComponentIndustrial>		
+	</costList>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+      </li>
+    </comps>
+	<recipeMaker>
+		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		<researchPrerequisite>JDSLegionArmoryCraft</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>JDSWorkBench</li>
+        </recipeUsers>
+	</recipeMaker>		
+   </ThingDef>	      
+
+   	<!--==============================================
+	=============== Throwing Spear ===================
+	===============================================-->	
+  
+  <ThingDef ParentName="JDSLegionGunBase">
+    <defName>JDS_Legion_Weapon_Melee_ThrowingSpear</defName>
+    <label>ThrowingSpear</label>
+    <description>"A primitive but effective weapon used by Caesar's Legion to take out opponents from a distance without having to rely on bullets."</description>
+    <graphicData>
+      <texPath>Things/Weapons/ThrowingSpear</texPath>
+	  <drawSize>1.2</drawSize>	
+    </graphicData>
+	<equippedAngleOffset>-50</equippedAngleOffset>	
+    <weaponTags>
+		<li>LegionWeaponRange</li>
+		<li>ThrowingSpear</li>		
+    </weaponTags>
+    <statBases>
+      <WorkToMake>8380</WorkToMake>
+      <Mass>0.9</Mass>
+    </statBases>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>0.70</cooldownTime>
+      </li>
+      <li>
+        <label>SpearTip</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+		<Steel>90</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>		
+	</costList>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <northOffset>(0,0,0)</northOffset>
+		<angleAdjustmentNorth>-270</angleAdjustmentNorth>
+        <eastOffset>(0,0,0)</eastOffset>
+        <angleAdjustmentEast></angleAdjustmentEast>		
+        <westOffset>(0,0,0)</westOffset>
+        <angleAdjustmentWest></angleAdjustmentWest>		
+        <southOffset>(0,0,0)</southOffset>
+		<angleAdjustmentSouth></angleAdjustmentSouth>
+      </li>
+    </comps>
+	<recipeMaker>
+		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		<researchPrerequisite>JDSLegionArmoryCraft</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>JDSAnvil</li>
+        </recipeUsers>
+	</recipeMaker>	
+	<verbs>
+	  <li>
+		<defaultProjectile>Damage_Legion_Spear</defaultProjectile>
+		<warmupTime>4</warmupTime>
+		<range>25</range>
+        <burstShotCount>1</burstShotCount>			
+		<soundCast>Interact_BeatFire</soundCast>
+		<verbClass>Verb_Shoot</verbClass>
+		<hasStandardCommand>true</hasStandardCommand>
+		<soundCastTail>GunTail_Light</soundCastTail>		
+	  </li>
+	</verbs>	
+   </ThingDef>	
+
+   	<!--==============================================
+	=================== Chainsaw =====================
+	===============================================-->	
+  
+  <ThingDef ParentName="JDSLegionSharpBase">
+    <defName>JDS_Legion_Weapon_Melee_Chainsaw</defName>
+    <label>Chainsaw</label>
+    <description>"A fusion-powered chainsaw which requires two hands to use. The weapon is heavy, but deals considerable damage."</description>
+    <graphicData>
+      <texPath>Things/Weapons/Chainsaw</texPath>
+	  <drawSize>1.2</drawSize>	  
+    </graphicData>
+	<equippedAngleOffset>-45</equippedAngleOffset>	
+    <weaponTags>
+		<li>LegionWeaponMelee</li>
+	    <li>Chainsaw</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>11200</WorkToMake>
+      <Mass>2.3</Mass>
+    </statBases>
+    <tools>
+      <li>
+        <label>Blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>0.3</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+		<Steel>110</Steel>
+		<Plasteel>80</Plasteel>
+		<ComponentIndustrial>2</ComponentIndustrial>		
+	</costList>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+      </li>
+    </comps>
+	<recipeMaker>
+		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		<researchPrerequisite>JDSLegionArmoryCraft</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>JDSWorkBench</li>
+        </recipeUsers>
+	</recipeMaker>		
+   </ThingDef>	
+
+   	<!--==============================================
+	================ Super Sledge ====================
+	===============================================-->	
+  
+  <ThingDef ParentName="JDSLegionBluntBase">
+    <defName>JDS_Legion_Weapon_Melee_SuperSledge</defName>
+    <label>Reforged Bludgeon</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/Weapons/SuperSledge</texPath>
+	  <drawSize>1.4</drawSize>		  
+    </graphicData>
+	<equippedAngleOffset>-35</equippedAngleOffset>
+    <weaponTags>
+		<li>LegionWeaponMelee</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>13000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>0.9</cooldownTime>
+      </li>
+      <li>
+        <label>PowerSmash</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+		<Steel>240</Steel>
+		<Plasteel>110</Plasteel>
+		<ComponentIndustrial>3</ComponentIndustrial>		
+	</costList>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <northOffset>(-0.25,0,0.25)</northOffset>                 <!--(X,Y,Z)-->
+		<angleAdjustmentNorth>250</angleAdjustmentNorth>
+        <eastOffset>(0.25,0,0.25)</eastOffset>
+        <angleAdjustmentEast></angleAdjustmentEast>		
+        <westOffset>(-0.25,0,0.25)</westOffset>
+        <angleAdjustmentWest></angleAdjustmentWest>		
+        <southOffset>(0.25,0,0.25)</southOffset>
+		<angleAdjustmentSouth></angleAdjustmentSouth>
+      </li>
+    </comps>	
+	<recipeMaker>
+		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		<researchPrerequisite>JDSLegionArmoryCraft</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>JDSWorkBench</li>
+        </recipeUsers>
+	</recipeMaker>		
+   </ThingDef>	
+
+   	<!--==============================================
+	=============== Thermic Lance ====================
+	===============================================-->	
+  
+  <ThingDef ParentName="JDSLegionBluntBase">
+    <defName>JDS_Legion_Weapon_Melee_ThermicLance</defName>
+    <label>Thermic Lance</label>
+    <description>"The thermic lance is an industrial metalworking tool that heats and melts an iron tube packed with iron rods in the presence of pressurized oxygen, producing the high temperatures required for cutting through steel girders and other thick metal objects."</description>
+    <graphicData>
+      <texPath>Things/Weapons/ThermicLance</texPath>
+	  <drawSize>1.4</drawSize>		  
+    </graphicData>
+	<equippedAngleOffset>-35</equippedAngleOffset>
+    <weaponTags>
+		<li>LegionWeaponMelee</li>
+		<li>ThermicLance</li>		
+    </weaponTags>
+    <statBases>
+      <WorkToMake>13000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>HeatRod</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+		<Steel>350</Steel>
+		<Plasteel>110</Plasteel>
+		<ComponentIndustrial>3</ComponentIndustrial>		
+	</costList>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+		<angleAdjustmentNorth>250</angleAdjustmentNorth>	  
+      </li>
+    </comps>	
+	<recipeMaker>
+		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		<researchPrerequisite>JDSLegionArmoryCraft</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>JDSWorkBench</li>
+        </recipeUsers>
+	</recipeMaker>		
+   </ThingDef>	
+
+   	<!--==============================================
+	============= Blade of The East ==================
+	===============================================-->	
+  
+  <ThingDef ParentName="JDSLegionSharpBase">
+    <defName>JDS_Legion_Weapon_Melee_BladeofTheEast</defName>
+    <label>Blade of The East</label>
+    <description>"The bumper sword, as the name suggests, consists of a rusty car bumper that has been flattened and sharpened into a thick, heavy blade."</description>
+    <graphicData>
+      <texPath>Things/Weapons/Blade_of_The_East</texPath>
+	  <drawSize>1.4</drawSize>	  
+    </graphicData>
+	<equippedAngleOffset>-45</equippedAngleOffset>	
+    <weaponTags>
+		<li>LegionWeaponMelee</li>
+		<li>BladeofTheEast</li>		
+    </weaponTags>
+    <statBases>
+      <WorkToMake>13000</WorkToMake>
+      <Mass>2.2</Mass>
+    </statBases>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>Blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+	<costList>
+		<Steel>400</Steel>
+		<Plasteel>125</Plasteel>
+		<ComponentIndustrial>2</ComponentIndustrial>		
+	</costList>
+    <comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+        <northOffset>(-0.25,0,0.25)</northOffset>                 <!--(X,Y,Z)-->
+		<angleAdjustmentNorth>250</angleAdjustmentNorth>
+        <eastOffset>(0.25,0,0.25)</eastOffset>
+        <angleAdjustmentEast></angleAdjustmentEast>		
+        <westOffset>(-0.25,0,0.25)</westOffset>
+        <angleAdjustmentWest></angleAdjustmentWest>		
+        <southOffset>(0.25,0,0.25)</southOffset>
+		<angleAdjustmentSouth></angleAdjustmentSouth>
+      </li>
+    </comps>
+	<recipeMaker>
+		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		<researchPrerequisite>JDSLegionArmoryCraft</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>JDSWorkBench</li>
+        </recipeUsers>
+	</recipeMaker>		
+   </ThingDef>	
+
+</Defs>
